@@ -18,3 +18,23 @@ Tecnologias Utilizadas
     Gerenciador de dependências: Apache Maven
 
     Biblioteca principal: GSON 2.13.0 (para manipulação de JSON)
+Configuração do Projeto
+    Clonar o repositório (se aplicável)
+
+    git clone [URL_DO_REPOSITORIO]
+    
+    cd projeto-maven-gson
+
+Compilar o projeto
+    
+    mvn compile
+
+Empacotar o projeto (gerar JAR)
+    
+    mvn package
+
+Executar o projeto
+
+
+    java -jar target/ProjetoMaven-1.0-SNAPSHOT.jar
+
