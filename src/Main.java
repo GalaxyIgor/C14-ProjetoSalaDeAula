@@ -1,5 +1,3 @@
-package Inatel.C14.Aula3.Maven;
-
 import com.google.gson.Gson;
 
 public class Main {
