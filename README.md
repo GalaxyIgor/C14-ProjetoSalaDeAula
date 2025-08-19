@@ -10,21 +10,26 @@ Gson (para manipulação de JSON)
 
 📦 Instalação
 1. Clonar o repositório
+   
     git clone https://github.com/seu-usuario/ProjetoMaven.git
     cd ProjetoMaven
    
 2. Verificar instalação do Maven
 Confirme se o Maven está instalado corretamente:
-    mvn -v
+
+   mvn -v
    
 3. Compilar o projeto
-    mvn clean install
+
+   mvn clean install
 
 4. Executar o projeto
-    mvn exec:java -Dexec.mainClass="Main"
+
+   mvn exec:java -Dexec.mainClass="Main"
 
 📚 Dependências
 O projeto utiliza a biblioteca Gson
+
     <dependency>
         <groupId>com.google.code.gson</groupId>
         <artifactId>gson</artifactId>
