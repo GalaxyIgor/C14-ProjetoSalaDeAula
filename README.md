@@ -1,40 +1,33 @@
 # C14-ProjetoSalaDeAula
 
-Descrição
+Projeto Maven - Exemplo com Gson
+Este é um projeto Java simples que utiliza Maven para gerenciamento de dependências e a biblioteca Gson para serialização e desserialização de objetos em JSON.
 
-Este é um projeto Java simples que demonstra o uso do Maven para gerenciamento de dependências e build automatizado, utilizando a biblioteca GSON para manipulação de JSON.
-Pré-requisitos
+🚀 Tecnologias utilizadas
+Java 21 ou superior
+Maven (para build e dependências)
+Gson (para manipulação de JSON)
 
-    Java JDK 24 (ou versão compatível)
+📦 Instalação
+1. Clonar o repositório
+    git clone https://github.com/seu-usuario/ProjetoMaven.git
+    cd ProjetoMaven
+   
+2. Verificar instalação do Maven
+Confirme se o Maven está instalado corretamente:
+    mvn -v
+   
+3. Compilar o projeto
+    mvn clean install
 
-    Apache Maven 3.6.0 ou superior
+4. Executar o projeto
+    mvn exec:java -Dexec.mainClass="Main"
 
-    Git (opcional, para clonar o repositório)
-
-Tecnologias Utilizadas
-
-    Linguagem: Java 24
-
-    Gerenciador de dependências: Apache Maven
-
-    Biblioteca principal: GSON 2.13.0 (para manipulação de JSON)
-Configuração do Projeto
-    Clonar o repositório (se aplicável)
-
-    git clone [URL_DO_REPOSITORIO]
-    
-    cd projeto-maven-gson
-
-Compilar o projeto
-    
-    mvn compile
-
-Empacotar o projeto (gerar JAR)
-    
-    mvn package
-
-Executar o projeto
-
-
-    java -jar target/ProjetoMaven-1.0-SNAPSHOT.jar
+📚 Dependências
+O projeto utiliza a biblioteca Gson
+    <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>2.13.0</version>
+    </dependency>
 
