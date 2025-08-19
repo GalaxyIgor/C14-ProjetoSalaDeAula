@@ -5,7 +5,7 @@ public class Main {
         System.out.println("Rodando o projeto Maven!");
 
         Gson gson = new Gson();
-        String json = gson.toJson("Hello im goKu!");
+        String json = gson.toJson("Usando GSON");
         System.out.println(json);
     }
 }
