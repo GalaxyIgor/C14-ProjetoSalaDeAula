@@ -36,3 +36,18 @@ O projeto utiliza a biblioteca Gson
         <version>2.13.0</version>
     </dependency>
 
+   ## 📝 Simulação e Resolução de Conflitos
+
+# Cenário de Conflito Simulado
+Criamos intencionalmente um conflito de merge onde ambos os desenvolvedores alteraram a mesma linha de código:
+
+**Conflito:**
+```python
+   <<<<<<< tobs-branch
+   String json = gson.toJson("Hello im goKu!");
+   =======
+   String json = gson.toJson("Exemplo de GSON em uso");
+   >>>>>>> main
+
+# Resolvemos o conflito
+   String json = gson.toJson("Usando GSON");
