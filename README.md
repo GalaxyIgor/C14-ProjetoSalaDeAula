@@ -1,42 +1,91 @@
-# C14-ProjetoSalaDeAula
+# Projeto Maven - Exemplo com Gson
 
-Projeto Maven - Exemplo com Gson
-Este é um projeto Java simples que utiliza Maven para gerenciamento de dependências e a biblioteca Gson para serialização e desserialização de objetos em JSON.
+## Descrição do Projeto
 
-🚀 Tecnologias utilizadas
-Java 21 ou superior
-Maven (para build e dependências)
-Gson (para manipulação de JSON)
+Este projeto demonstra uma aplicação simples em Java usando Maven para gerenciamento de dependências, compilação e execução. O foco é a utilização da biblioteca **Gson** para conversão de objetos Java em JSON. O projeto contém uma classe `Main` que imprime mensagens no console e converte uma string simples para JSON usando Gson.
 
-📦 Instalação
-1. Clonar o repositório
-   
-    git clone https://github.com/seu-usuario/ProjetoMaven.git
-    cd ProjetoMaven
-   
-2. Verificar instalação do Maven
-Confirme se o Maven está instalado corretamente:
+---
+
+## Estrutura do Projeto
+
+- `src/main/java/Main.java` - Classe principal com o exemplo de uso do Gson.
+- `pom.xml` - Arquivo de configuração do Maven definindo dependências e configuração do build.
+
+---
+
+## Requisitos
+
+- Java JDK 24 (ou superior)
+- Maven instalado e configurado no PATH do sistema
+
+---
+
+## Instruções para Configuração e Instalação
+
+1. **Clone ou copie o projeto para sua máquina:**
+
+   git clone <url-do-repositorio>
+   cd ProjetoMaven
+
+
+2. **Verifique se o Java está instalado:**
+
+   java -version
+
+Deve retornar informações sobre a versão 24 do JDK.
+
+3. **Verifique se o Maven está instalado:**
 
    mvn -v
    
-3. Compilar o projeto
+
+Deve retornar a versão do Maven e a versão do Java configuradas.
+
+---
+
+## Instalação das Dependências e Build
+
+Para baixar as dependências definidas no `pom.xml` e compilar o projeto, execute:
 
    mvn clean install
 
-4. Executar o projeto
+
+Este comando irá:
+
+- Limpar qualquer build anterior (`clean`)
+- Baixar bibliotecas necessárias (ex: Gson)
+- Compilar o código-fonte
+- Gerar os arquivos compilados no diretório `target`
+
+---
+
+## Execução do Projeto
+
+Após compilar, você pode rodar a aplicação com:
 
    mvn exec:java -Dexec.mainClass="Main"
+   
 
-📚 Dependências
-O projeto utiliza a biblioteca Gson
+Alternativamente, execute diretamente o `.class` compilado:
 
-    <dependency>
-        <groupId>com.google.code.gson</groupId>
-        <artifactId>gson</artifactId>
-        <version>2.13.0</version>
-    </dependency>
+   java -cp target/classes:~/.m2/repository/com/google/code/gson/gson/2.13.0/gson-2.13.0.jar Main
 
-   ## 📝 Simulação e Resolução de Conflitos
+
+(Substitua o caminho do JAR do Gson conforme seu repositório local do Maven.)
+
+---
+
+## Exemplo de Saída Esperada
+
+   Rodando o projeto Maven!
+   "Usando GSON"
+
+
+---
+
+
+   
+## 📝 Simulação e Resolução de Conflitos
 
 # Cenário de Conflito Simulado
 Criamos intencionalmente um conflito de merge onde ambos os desenvolvedores alteraram a mesma linha de código:
